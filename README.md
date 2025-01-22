@@ -1,50 +1,119 @@
-# Welcome to your Expo app 👋
+# Hayvan Sahiplendirme Mobil Uygulaması
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Bu proje, hayvan sahiplendirme süreçlerini kolaylaştırmak ve hızlandırmak için geliştirilmiş bir mobil uygulamadır. React Native, Expo ve Tailwind CSS kullanılarak geliştirilmiştir ve yalnızca Android platformunda çalışmaktadır.
 
-## Get started
+## Özellikler
 
-1. Install dependencies
+- **Hayvan Listeleme**: Kullanıcılar, sahiplendirilmeyi bekleyen hayvanların listesini görebilir.
+- **Detay Sayfası**: Her bir hayvan için detaylı bilgi görüntüleme imkanı.
+- **Başvuru Formu**: Kullanıcılar, sahiplendirme başvurusu yapabilir.
+- **Kullanıcı Dostu Arayüz**: Modern ve sade bir tasarım.
+- **Performans Optimizasyonu**: Hızlı ve etkili bir kullanıcı deneyimi.
+
+## Kullanılan Teknolojiler
+
+- **React Native**: Mobil uygulama geliştirme için kullanılan JavaScript framework'ü.
+- **Expo**: React Native uygulamalarını hızlıca geliştirme ve test etme imkanı.
+- **Tailwind CSS**: Hızlı ve özelleştirilebilir bir CSS framework'ü.
+
+## Gereksinimler
+
+Bu projeyi çalıştırmak için aşağıdaki araçların yüklü olması gerekir:
+
+- Node.js (>=14.x)
+- npm veya yarn
+- Expo CLI
+- Android Studio (Android Emulator veya fiziksel cihaz ile test için)
+
+## Kurulum
+
+1. Depoyu klonlayın:
+
+   ```bash
+   git clone https://github.com/metinogulcank/patiya.git
+   cd patiya
+   ```
+
+2. Gerekli bağımlılıkları yükleyin:
 
    ```bash
    npm install
    ```
 
-2. Start the app
+3. Expo CLI'yi global olarak yüklemediyseniz yükleyin:
 
    ```bash
-    npx expo start
+   npm install -g expo-cli
    ```
 
-In the output, you'll find options to open the app in a
+4. Uygulamayı çalıştırın:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+   ```bash
+   expo start
+   ```
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+5. Uygulamayı Android cihazda veya emulatorde test edin.
 
-## Get a fresh project
+## Proje Yapısı
 
-When you're ready, run:
+.\n
+├── app/                   # Ana uygulama dosyaları
+│   ├── tabs/              # Sekmelerin bulunduğu ekranlar (Home, Favorite, Inbox, vb.)
+│   │   ├── _layout.jsx    # Sekme düzeni
+│   │   ├── favorite.jsx   # Favori hayvanları listeleme ekranı
+│   │   ├── home.jsx       # Ana sayfa
+│   │   ├── inbox.jsx      # Gelen kutusu
+│   │   ├── profile.jsx    # Kullanıcı profili
+│   ├── add-new-pet/       # Yeni bir hayvan ekleme ekranı
+│   ├── chat/              # Mesajlaşma sistemi dosyaları
+│   ├── login/             # Giriş ekranı dosyaları
+│   ├── pet-details/       # Hayvan detaylarını görüntüleme ekranı
+│   ├── user-post/         # Kullanıcı tarafından eklenen hayvanların listesi
+│   ├── _layout.jsx        # Genel uygulama düzeni
+│   └── index.jsx          # Giriş noktası
+├── assets/                # Uygulama için kullanılan medya dosyaları (resimler, ikonlar, vb.)
+├── components/            # Tekrar kullanılabilir React Native bileşenleri
+├── config/                # Uygulama yapılandırma dosyaları
+├── constants/             # Sabit değerler (ör. renkler, fontlar, API URL'leri)
+├── Shared/                # Ortak kullanılan yardımcı bileşenler ve dosyalar
+│   └── Shared.jsx         # Paylaşılan bileşenler
+├── .env                   # Ortam değişkenlerini tanımlayan dosya (API anahtarları vb.)
+├── .gitignore             # Git tarafından yoksayılacak dosyalar
+├── app.json               # Expo proje ayarları
+├── eas.json               # Expo Application Services (EAS) yapılandırması
+├── expo-env.d.ts          # TypeScript için ortam değişkenleri tanımı
+├── package.json           # Proje bağımlılıkları ve komutları
+├── package-lock.json      # Bağımlılıkların kesin sürüm bilgisi
+├── README.md              # Proje açıklaması ve dokümantasyonu
+└── tsconfig.json          # TypeScript yapılandırma dosyası
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Katkıda Bulunma
 
-## Learn more
+Katkıda bulunmak isterseniz:
 
-To learn more about developing your project with Expo, look at the following resources:
+1. Bu repoyu forklayın.
+2. Yeni bir özellik veya düzeltme için bir branch oluşturun.
+   ```bash
+   git checkout -b yeni-ozellik
+   ```
+3. Yaptığınız değişiklikleri commit edin.
+   ```bash
+   git commit -m "Özellik eklendi"
+   ```
+4. Branch'inizi push edin.
+   ```bash
+   git push origin yeni-ozellik
+   ```
+5. Bir Pull Request açın.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## İletişim
 
-## Join the community
+Sorularınız veya önerileriniz için benimle iletişime geçebilirsiniz:
 
-Join our community of developers creating universal apps.
+- **E-posta**: metinogulcank06@gmail.com
+- **GitHub**: https://github.com/metinogulcank
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+---
+
+Bu proje, hayvan sahiplendirme süreçlerini dijitalleştirerek topluma katkı sağlamayı amaçlamaktadır. Katkılarınız ve geri bildirimleriniz bizim için çok değerli!
