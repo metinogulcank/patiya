@@ -54,40 +54,6 @@ Bu projeyi çalıştırmak için aşağıdaki araçların yüklü olması gereki
 
 5. Uygulamayı Android cihazda veya emulatorde test edin.
 
-## Proje Yapısı
-
-├── app/                   # Ana uygulama dosyaları
-│   ├── tabs/              # Sekmelerin bulunduğu ekranlar (Home, Favorite, Inbox, vb.)
-│   │   ├── _layout.jsx    # Sekme düzeni
-│   │   ├── favorite.jsx   # Favori hayvanları listeleme ekranı
-│   │   ├── home.jsx       # Ana sayfa
-│   │   ├── inbox.jsx      # Gelen kutusu
-│   │   ├── profile.jsx    # Kullanıcı profili
-│   ├── add-new-pet/       # Yeni bir hayvan ekleme ekranı
-│   ├── chat/              # Mesajlaşma sistemi dosyaları
-│   ├── login/             # Giriş ekranı dosyaları
-│   ├── pet-details/       # Hayvan detaylarını görüntüleme ekranı
-│   ├── user-post/         # Kullanıcı tarafından eklenen hayvanların listesi
-│   ├── _layout.jsx        # Genel uygulama düzeni
-│   └── index.jsx          # Giriş noktası
-├── assets/                # Uygulama için kullanılan medya dosyaları (resimler, ikonlar, vb.)
-├── components/            # Tekrar kullanılabilir React Native bileşenleri
-├── config/                # Uygulama yapılandırma dosyaları
-├── constants/             # Sabit değerler (ör. renkler, fontlar, API URL'leri)
-├── Shared/                # Ortak kullanılan yardımcı bileşenler ve dosyalar
-│   └── Shared.jsx         # Paylaşılan bileşenler
-├── .env                   # Ortam değişkenlerini tanımlayan dosya (API anahtarları vb.)
-├── .gitignore             # Git tarafından yoksayılacak dosyalar
-├── app.json               # Expo proje ayarları
-├── eas.json               # Expo Application Services (EAS) yapılandırması
-├── expo-env.d.ts          # TypeScript için ortam değişkenleri tanımı
-├── package.json           # Proje bağımlılıkları ve komutları
-├── package-lock.json      # Bağımlılıkların kesin sürüm bilgisi
-├── README.md              # Proje açıklaması ve dokümantasyonu
-└── tsconfig.json          # TypeScript yapılandırma dosyası
-
-
-
 ## Katkıda Bulunma
 
 Katkıda bulunmak isterseniz:
