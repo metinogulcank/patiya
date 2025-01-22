@@ -56,7 +56,6 @@ Bu projeyi çalıştırmak için aşağıdaki araçların yüklü olması gereki
 
 ## Proje Yapısı
 
-.
 ├── app/                   # Ana uygulama dosyaları
 │   ├── tabs/              # Sekmelerin bulunduğu ekranlar (Home, Favorite, Inbox, vb.)
 │   │   ├── _layout.jsx    # Sekme düzeni
